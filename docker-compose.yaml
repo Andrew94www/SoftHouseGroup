@@ -11,6 +11,9 @@ services:
    depends_on: 
           - app
   app:
-     image: php:8.1-fpm
-     volumes:
+    build:
+      context: .
+      dockerfile: _docker/app/Dockerfile
+    volumes:
         - ./:/var/www/ 
+        - ./_docker/php-fpm.d/www.conf:/usr/local/etc/www.conf
