@@ -1,8 +1,8 @@
 <?php
+
 namespace Model\Factory;
+
 interface TypeLoggerInterface
 {
- public function send(string $message);
-
- 
+    public function send(string $message);
 }
