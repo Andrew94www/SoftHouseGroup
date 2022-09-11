@@ -1,8 +1,8 @@
 <?php 
 namespace Model\Factory;
-class Db extends TypeLogger{
+class All extends TypeLogger{
     public function getLogger(): TypeLoggerInterface
     {
-        return new LoggerDb();
+        return new LoggerAll();
     }
 }
